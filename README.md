@@ -48,3 +48,5 @@ Si vous souhaitez voir le résultat du projet, rendez-vous [ici](http://zombiela
 
 
 ## Contributeurs
+
+[Mario SOuvily-Grieco](https://github.com/mario-souvily)

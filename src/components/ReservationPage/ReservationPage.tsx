@@ -27,7 +27,7 @@ function ReservationPage() {
 		  console.log(token)
           //appel api sur l'url reservation
           const response = await fetch(
-            `http://localhost:3101/api/reservation`,
+            `${import.meta.env.VITE_API_URL}/api/reservation`,
             {
               // on indque ici que les donnees sont en json
               headers: {
