@@ -1,0 +1,120 @@
+.section-login{
+	object-fit: cover;
+	background-position: center;
+	background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-login{
+  font-size: smaller;
+  font-weight: bolder;
+}
+
+.title-login{
+  font-weight: bold;
+}
+
+/* Permet de sélectionner le background et d'y appliquer l'effet de flou sans impacter les éléments au dessus */
+.section-login::before{
+  content: "";
+  background-image: url("/image/Background-accueil3.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Applique un effet de flou sur l'image de fond */
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.all-section{
+  display: flex;
+  text-align: center;
+}
+
+.section-register{
+  background-color: rgba(255, 255, 255, 0.767);
+  color: black;
+  border-radius: 2rem;
+  height: 100%;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+    justify-content: center;
+  /* Applique un effet ombré sur le bord du formulaire a droite/en bas */
+  box-shadow: 15px 10px 12px rgba(0, 0, 0, 0.521), 
+              0 4px 6px rgba(0, 0, 0, 0.76);
+}
+
+.section-connect{
+  background-color: rgba(255, 255, 255, 0.767);
+  color: black;
+  border-radius: 2rem;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+    justify-content: center;
+  /* Applique un effet ombré sur le bord du formulaire a droite/en bas */
+  box-shadow: 15px 10px 12px rgba(0, 0, 0, 0.521), 
+              0 4px 6px rgba(0, 0, 0, 0.76);
+}
+
+.title-login{
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.btn-login{
+  background-color: #7F244B;
+  border-radius: 50px;
+  padding: 0.5rem;
+  width: 40%;
+  min-width: 14rem;
+  color: white;
+}
+
+.btn-connect{
+  min-width: 8rem;
+  max-width: 10rem;
+}
+
+.btn-register{
+  margin-top: 1rem;
+}
+
+
+  @media(max-width:387px) {
+    .text-connexion{
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width:760px){
+    .title-login{
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+
+  @media (max-width:720px){
+    .all-section{
+      flex-direction: column;
+  }
+  .section-register{
+    padding: 1rem;
+    padding-top: 0rem;
+    font-size: 1rem;
+  }
+  .section-connect{
+    padding: 1rem;
+    padding-top: 0rem;
+  }
+  .btn-login{
+    margin-top: 1rem;
+  }
+
+}

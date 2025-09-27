@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* responsive mobile */
+@media (max-width: 1024px) {
+	.lg\: hidden {
+		display: none;
+	}
+}
+
+.btn-ghost {
+	width: 13rem;
+	height: 8rem;
+}
+
+.menu {
+	border-bottom: 1px solid white;
+	top: -120px;
+	color: white;
+}
+
+
+.menu::after {
+	left: -30px;
+}
+
+.accueil-link {
+	width: 40%;
+}
+
+.logo-navbar {
+	transition: transform 0.3s ease-in-out;
+
+}
+
+.logo-navbar:hover {
+	transform: scale(1.1);
+}
+
+.navbar {
+	display: flex;
+	color: white;
+}
+
+.dropdown {
+	background-color: none;
+	width: 100%;
+}
+
+
+.btn-navbar:hover{
+	background-color: rgb(180, 80, 142);
+}
+.btn-navbar a:hover{
+	background-color: rgb(180, 80, 142);
+}
+
+/* Faire disparaître le menu burger et faire apparaître la navbar */
+@media (max-width: 1024px) {
+	.menu-bureau {
+		display: none;
+	}
+	.dropdown {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		border-bottom: none;
+	}
+	.dropdown-content {
+		position: absolute;
+		top: 4.2rem;
+		background-color: rgb(25, 30, 36) ;
+		right: 0vw;
+	}
+	.menu {
+		border-bottom: none;
+	}
+	.menu-burger{
+
+		width: 45vw;
+		height: 10vh;
+		position: absolute;
+		top: 1rem;
+		right: 0vw;
+
+	}
+
+	.logo-navbar{
+		width: 40vw;
+		height: 15vh;
+	}
+	.navbar{
+		display: none;
+	}
+}

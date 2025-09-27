@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Limite de la taille de l'image afin qu'elle ne prenne pas l'entièreté du footer */
+.logo-footer{
+    max-width: 12rem;
+    margin: auto;
+}
+
+.footer{
+    background-color: #191e24;
+    color: white;
+}

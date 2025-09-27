@@ -1,0 +1,179 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.dashboard-general{
+  object-fit: cover;
+	background-position: center;
+	background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-general::before{
+  content: "";
+  background-image: url("/image/Background-accueil3.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Applique un effet de flou sur l'image de fond */
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.dashboard{
+
+  border: 5px solid rgba(241, 244, 241, 0.037);
+  color:black;
+  background-color: #d9d9d9;
+  height: 80%;
+  margin: 10px;
+  border-radius:2rem ;
+
+}
+
+.dashboard-left{
+  max-width: 330px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-left-tab{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.dashboard-left-btn{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.title-reservation-account{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.dashboard-right{
+
+  max-width: 900px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.text-account{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.btn-account-delete{
+  color: black;
+  background-color: white; 
+  border-radius: 2rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  
+}
+
+.btn-account{
+display: flex;
+justify-items: end;
+flex-direction: column;
+justify-content: space-evenly;
+background-color: #979495;
+padding: 1.5rem;
+border-radius: 2rem;
+margin-bottom: -3.5rem;
+margin-top: -3.5rem;
+margin-right: -9.5%;
+}
+
+.title-account{
+  background-color: #989496;
+  border-radius: 2rem;
+  color: black;
+  padding: 0.5rem 3rem;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  border-radius: 0px;
+  border-style: none;
+  
+  
+}
+
+.account-modal{
+  margin: auto;
+  height: 40%;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button-account-modal{
+  margin-left: 2%;
+  background-color: #7F244B;
+}
+
+.account-modal-modify{
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.account-modal-btn-close{
+  position: absolute;
+  top:0%;
+  right: 0%;
+  background-color: #7F244B;
+  color: white;
+}
+
+@media only screen and (max-width:600px){
+  .dashboard-general{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .dashboard-left{
+    flex-direction: row;
+    height: 10rem;
+  }
+  .dashboard-right{
+    padding: 2%;
+    height: 60%;
+  }
+  .dashboard-right h2{
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  .btn-account{
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 4%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    height: 60%;
+    width: 90%;
+
+  }
+  .account-modal{
+    margin: auto;
+    height: 40%;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

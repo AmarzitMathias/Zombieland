@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.section-inscription {
+	object-fit: cover;
+	background-position: center;
+	background-size: cover;
+}
+
+/* Permet de sélectionner le background et d'y appliquer l'effet de flou sans impacter les éléments au dessus */
+.section-inscription::before{
+  content: "";
+  background-image: url("/image/Background-accueil3.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Applique un effet de flou sur l'image de fond */
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.text-inscription{
+  margin-top: -2rem;
+  margin-bottom: 1rem;
+  border-bottom: black 2px solid;
+  font-size: 2rem;
+}
+
+.formulaire-inscription{
+  background-color: rgba(255, 255, 255, 0.63);
+  padding: 3rem;
+  border-radius: 10px;
+  text-align: center;
+  /* Applique un effet ombré sur le bord du formulaire a droite/en bas */
+  box-shadow: 15px 10px 12px rgba(0, 0, 0, 0.521), 
+              0 4px 6px rgba(0, 0, 0, 0.76);
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+}
+
+.btn-register{
+  background-color: #7F244B;
+  border-radius: 50px;
+  padding: 0.5rem;
+  width: 40%;
+  min-width: 10rem;
+  color: white;
+  margin: auto;
+}
+
+.error-inscription{
+  color: black;
+  display: none;
+  width: 80%;
+  margin:auto;
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .formulaire-inscription{
+    text-align: center;
+  }
+}
+
+  @media (max-width:599px) {
+    .formulaire-inscription{
+      width: 90%;
+      padding: 1.5rem;
+    }
+    .text-inscription{
+      font-size: 2rem;
+
+      margin: auto;
+    }
+  }
+
+  @media(max-width:387px) {
+    .text-inscription{
+      font-size: 1.2rem;
+    }
+  }

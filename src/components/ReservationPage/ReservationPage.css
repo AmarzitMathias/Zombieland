@@ -1,0 +1,302 @@
+
+
+/* Centre le contenu à la fois horizontalement et verticalement */
+.section-reservation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-card{
+  padding: 2%; /* Espace intérieur autour du contenu */
+  border-radius: 50px; /* Coins arrondis */
+  background-color: #d9d9d9; /* Fond gris clair */
+  display: flex;
+  flex-direction: column; /* Aligne les enfants en colonne */
+  align-items: center; /* Centre le contenu horizontalement */
+  color: #7F244B;  /* Texte en bordeaux foncé */
+  width: 30%; /* La carte prend 30% de la largeur du parent */
+  /* Applique un effet ombré sur le bord du formulaire a droite/en bas */
+  box-shadow: 15px 10px 12px rgba(0, 0, 0, 0.521), 
+              0 4px 6px rgba(0, 0, 0, 0.76);
+  
+}
+
+.reservation-figure{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-image{
+  border-radius: 10%;
+}
+
+.ticket-title{
+  text-align: center;
+}
+
+.reservation-btn{
+  background-color: #7F244B;
+  border-radius: 50px;
+  padding: 1rem; /* Espace intérieur pour agrandir le bouton */
+  width: 50%; /* Prend 50% de la largeur du parent */
+  height: 50%; /* Hauteur proportionnelle */
+  font-size: 1rem;
+  color: white;
+}
+
+.reservation-title{
+  margin-bottom: 2rem; /* Espace en bas du titre */
+  border: none;
+  border-bottom: 1px  dashed #222020; /* Ligne pointillée sous le titre */
+  width: 100%;
+  border-width: 3px;
+  padding: 0.5rem;
+}
+
+.reservation-container-text{
+  margin-top: 0.6rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;  /* Espacement vertical uniforme */
+  
+}
+
+.texte-reservation > h3{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.reservation-calendar{
+  /* Applique un effet ombré sur le bord du formulaire a droite/en bas */
+  box-shadow: 15px 10px 12px rgba(0, 0, 0, 0.521), 
+              0 4px 6px rgba(0, 0, 0, 0.76);
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+
+
+.calendar-text{
+  color: #7F244B;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 200;
+  text-transform: none; /* Empêche les majuscules automatiques */
+  font-size: 2rem;
+  align-items: center;
+}
+
+.section-calendar{
+  display: flex;
+  align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  background-color: #d9d9d9;
+  margin-bottom: -5.2rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  border-radius: 0 0 1rem 1rem;
+  padding-bottom: 1rem;
+  /* Applique un effet ombré sur le bord du formulaire a droite/en bas */
+  box-shadow: 15px 10px 60px rgba(0, 0, 0, 0.521), 
+              0 4px 6px rgba(0, 0, 0, 0.76);
+  
+}
+
+.react-day-picker{
+  color: white;
+  background-color: rgb(29, 35, 42);
+}
+
+.span-reservation{
+  background-color: white;
+  padding: 0.5;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10%;
+  margin: 0.5rem;
+}
+
+.modal-reservation {
+  background-color: #d9d9d9;
+  height: 30%;
+  width: 40%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.error-reservation{
+  color: black;
+  margin:auto;
+  text-align: center;
+}
+
+.modal-reservation-text{
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.reservation-modal-btn{
+  width: 30%;
+  height: 20%;
+  text-align: center;
+  vertical-align: center;
+  padding: 0;
+  margin-top: 5%;
+}
+
+.reservation-text{
+  text-align: center;
+}
+
+
+/* Agrandir et adapter la position pour les écran > 1024px */
+@media only screen and (max-width: 762px) {
+  .section-reservation{
+    display: flex;
+    flex-direction: column;
+  }
+  .reservation-card{
+    width: 60%;
+    height: 20%;
+    border-radius: 20%;
+    font-size: 2px;
+    
+  }
+
+  .reservation-figure{
+    max-width: 10rem;
+  }
+  
+  .calendar{
+    width: 90%;
+  }
+  
+  .ticket-title{
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  
+  .reservation-image{
+    width: 60%;
+  }
+  
+  .reservation-container-text{
+    gap: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .reservation-btn{
+    width: 40%;
+    padding: 0.4rem;
+  }
+  .calendar-text{
+    font-size: 1.5rem;
+  
+  }
+  .modal-reservation{
+    width: 80%;
+    border-radius: 20%;
+  }
+  
+  .modal-reservation-text{
+    font-size: 1rem;
+  }
+  
+  }
+/* Agrandir et adapter la position pour les écran > 1024px */
+@media only screen and (max-width: 600px) {
+.section-reservation{
+  display: flex;
+  justify-content: center;
+
+}
+.reservation-card{
+  width: 60%;
+  height: 20%;
+  border-radius: 20%;
+  font-size: 2px;
+  
+}
+
+.calendar{
+  width: 85%;
+}
+
+.ticket-title{
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.reservation-image{
+  width: 60%;
+}
+
+.reservation-container-text{
+  gap: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.reservation-btn{
+  width: 40%;
+  padding: 0.4rem;
+}
+.calendar-text{
+  font-size: 1.5rem;
+
+}
+
+}
+
+@media only screen and (max-width: 430px) {
+  
+  .reservation-card{
+    width: 80%;
+  }
+
+  .reservation-figure{
+    width: 60%;
+  }
+
+  .reservation-container-text{
+    gap: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .reservation-btn{
+    width: 60%;
+    padding: 0.4rem;
+  }
+
+  .calendar-text{
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+  .react-day-picker{
+    display: block;
+    min-width: 270px;
+
+  }
+
+  .calendar{
+    margin-right: 15%;
+  }
+}

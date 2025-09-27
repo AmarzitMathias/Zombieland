@@ -1,0 +1,37 @@
+.modal-box{
+    background-color: #d9d9d9;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Applique un effet ombré sur le bord du formulaire a droite/en bas */
+    box-shadow: 15px 10px 12px rgba(0, 0, 0, 0.521), 
+                0 4px 6px rgba(0, 0, 0, 0.76);
+    border-radius: 2rem;
+  }
+  
+  .img-modal{
+    width: 70%;
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+  
+  .btn-modal{
+    border-radius: 2rem;
+    background-color: #A1406D;
+    padding: 0.7rem;
+    color: white;
+    width: 15rem;
+  }
+  
+  .title-modal{
+    color: #A1406D;
+  }
+  
+  .text-modal{
+    font-size: 0.9rem;
+    font-weight: normal;
+  }

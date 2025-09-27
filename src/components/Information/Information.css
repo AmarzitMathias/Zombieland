@@ -1,0 +1,149 @@
+.section-all-information {
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text-information {
+  font-size: smaller;
+  font-weight: bolder;
+  padding: 0, 5rem;
+}
+
+.title-information {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 5%;
+}
+
+.title-FAQ{
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+/* Permet de sélectionner le background et d'y appliquer l'effet de flou sans impacter les éléments au dessus */
+.section-information::before {
+  content: "";
+  background-image: url("/image/Background-accueil3.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Applique un effet de flou sur l'image de fond */
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.section-information {
+  background-color: rgba(255, 255, 255, 0.767);
+  color: black;
+  border-radius: 2rem;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: start;
+  /* Applique un effet ombré sur le bord du formulaire a droite/en bas */
+  box-shadow: 15px 10px 12px rgba(0, 0, 0, 0.521), 0 4px 6px rgba(0, 0, 0, 0.76);
+}
+
+.question {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.answer {
+  text-align: start;
+}
+
+
+
+/* @media (max-width: 387px) {
+  .text-information {
+    font-size: 1.2rem;
+  }
+} */
+
+/* @media (max-width: 760px) {
+  .title-informaton {
+    text-align: start;
+    margin-top: 1rem;
+  }
+} */
+
+@media (max-width: 1000px) {
+  .section-all-information {
+    flex-direction: column;
+  }
+  .section-information {
+    padding: 1rem;
+    padding-top: 0rem;
+    font-size: 1rem;
+  }
+  .title-information{
+    margin-top: 0;
+  }
+  .title-FAQ{
+    display: none;
+  }
+  .faq-information{
+    font-size: 0.2rem;
+  }
+  .question{
+    font-size: 0.8rem;
+  }
+  .answer{
+    font-size: 0.8rem;
+  }
+}
+.faq-list {
+  text-align: start;
+}
+
+@media (max-width: 1500px) {
+  .section-all-information {
+    flex-direction: column;
+  }
+  .section-information {
+    padding: 1rem;
+    padding-top: 0rem;
+    font-size: 1rem;
+  }
+  .title-information{
+    margin-top: 0;
+  }
+  .title-FAQ{
+    display: none;
+  }
+  .faq-information{
+    font-size: 0.2rem;
+  }
+  .question{
+    font-size: 0.8rem;
+  }
+  .answer{
+    font-size: 0.8rem;
+  }
+}
+.faq-list {
+  text-align: start;
+}
+
+
+@media (max-width: 510px) {
+
+  .section-information{
+    top:0px
+  }
+}
+.faq-list {
+  text-align: start;
+}

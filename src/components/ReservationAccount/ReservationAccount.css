@@ -1,0 +1,68 @@
+.table-account{
+    display: none;
+    color: black;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.table-account th, .table-account td{
+    width: 25%;
+    text-align: center;
+    border: 1px solid black;
+  padding: 4px;
+
+}
+
+/* Pour éviter que le bouton supprimer ait une bordure */
+.table-account td:last-child{
+    border: none;
+}
+
+.account-table--head{
+    width: 100%;
+}
+
+.account-reservation-title{
+    font-size: 2rem;
+}
+
+.account-ticket-message{
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal */
+
+.account-ticket-modal{
+    margin: auto;
+    height: 40%;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-ticket-modal-texte{
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.button-account-reservation-modal{
+    background-color: #7F244B;
+    color: white;
+}
+
+/* Media Query */
+
+@media only screen and (max-width:600px){
+    .button-account-reservation-modal{
+        margin: 0 auto;
+    }
+    .account-ticket-modal{
+        width: 80%;
+    }
+}

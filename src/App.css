@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.background-image{
+  filter: blur(1.5px);
+  background-size: cover;
+}
+
+.background-image2{
+  filter: blur(3px);
+  background-size: cover;
+}
+
+.background-image3{
+  filter: blur(3px);
+}
+
+.button{
+  background-color: #e63f9e67;
+  border: white solid 1px;
+  border-radius: 20px;
+}
+
+.text-xl {
+  size: 4em;
+}

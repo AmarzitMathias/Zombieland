@@ -1,0 +1,244 @@
+h1 {
+	font-size: 3rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.25;
+}
+
+p {
+	font-size: 1.125rem;
+	line-height: 1.625;
+	font-weight: 600;
+	text-align: center;
+}
+
+.bg-gradient-custom {
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.9),
+		transparent,
+		rgba(0, 0, 0, 0.9)
+	);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.text-accueil {
+	position: relative;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+	max-width: 42rem;
+	margin-top: 400px;
+}
+
+.title-accueil{
+	text-shadow: 0 10px px rgb(0, 0, 0)
+}
+
+.title-attraction{
+	text-shadow: 0 10px 20px rgb(0, 0, 0);
+	color: white;
+}
+
+.title-ticket{
+	text-shadow: 0 10px 10px rgb(0, 0, 0)
+}
+
+.container-card {
+	position: relative;
+	display: flex;
+	border-radius: 30px;
+	justify-content: center;
+	gap: 2rem;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	width: 100vw;
+}
+
+.image-background {
+	width: 100%;
+	height: 100%;
+}
+
+.section-accueil {
+	object-fit: cover;
+	background-position: center;
+	background-size: cover;
+	text-shadow: 0 10px 20px rgb(0, 0, 0)
+}
+
+/* Permet de sélectionner le background et d'y appliquer l'effet de flou sans impacter les éléments au dessus */
+.section-accueil::before{
+  content: "";
+  background-image: url("/image/Background-accueil.png");
+  background-size: cover;
+  background-position: center;
+  /* Applique un effet de flou sur l'image de fond */
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.section-attraction {
+	object-fit: cover;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+/* Permet de sélectionner le background et d'y appliquer l'effet de flou sans impacter les éléments au dessus */
+.section-attraction::before{
+	content: "";
+  background-image: url("/image/Background-accueil2.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Applique un effet de flou sur l'image de fond */
+  filter: blur(3px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.section-reservation {
+	object-fit: cover;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+/* Permet de sélectionner le background et d'y appliquer l'effet de flou sans impacter les éléments au dessus */
+.section-reservation::before{
+	content: "";
+  background-image: url("/image/Background-accueil3.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Applique un effet de flou sur l'image de fond */
+  filter: blur(2px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.button-attraction {
+	transform: translateY(5rem);
+	width: 10rem;
+	height: 2rem;
+	font-size: larger;
+	background-color: #7f244b;
+	border: none;
+	border-radius: 50px;
+	padding: 2rem 0;
+}
+
+
+/* iphone 12pro */
+@media only screen and (max-width: 560px) {
+
+	.container-attraction {
+		display: flex;
+		flex-direction: column;
+		gap: 0px;
+		width: 100vw;
+		height: 100%;
+	}
+	.container-card {
+		position: relative;
+		display: flex;
+		display: flex;
+		flex-direction: column;
+		top: -8%;
+		gap: 1rem;
+	}
+	.button-attraction {
+		position: relative;
+		transform: translateY(-7rem);
+	}
+	.title-accueil{
+		bottom: 110%;
+	}
+}
+
+@media only screen and (min-width: 561px) {
+	.container-card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		top: -4rem;
+
+	}
+	.button-attraction {
+		width: 12rem;
+		transform: translateY(-8rem);
+	}
+	.container-attraction{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/* iphone 14 pro */
+@media only screen and (min-width: 769px) {
+	.container-card {
+		position: relative;
+		gap: 1.5rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: auto;
+		width: auto;
+		height: auto;
+		margin-top: 30%;
+		top: -30vh
+
+
+	}
+	.button-attraction {
+		
+		width: 12rem;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.container-card {
+		position: relative;
+		gap: 5rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: auto;
+		height: auto;
+		top: -50vh
+	}
+	.button-attraction {
+		width: 15rem;
+		height: 3rem;
+		font-size: 2rem;
+		transform: translateY(-50vh);
+	}
+}
+
+@media only screen and (min-width: 2160px) {
+	.container-card {
+		position: relative;
+		transform: translateY(4.5rem);
+		gap: 5rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: auto;
+		height: auto;
+	}
+}
