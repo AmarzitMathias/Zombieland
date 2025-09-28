@@ -9,11 +9,11 @@ Si vous souhaitez voir le résultat du projet, rendez-vous [ici](http://zombiela
 
 ## Fonctionnalités principales
 - Création et gestion de compte utilisateur
-- Connexion et inscription sécurisées
-- Réservation d’activités et d’attractions
+- Connexion et inscription 
+- Consultation d’activités et d’attractions
 - Visualisation des activités disponibles
 - Gestion des billets et des réservations
-- Interface d’administration (gestion des utilisateurs, activités, etc.)
+
 
 ## Technologies utilisées
 - Frontend : React, TypeScript, Vite, TailwindCSS, daisyUI
@@ -29,10 +29,12 @@ Si vous souhaitez voir le résultat du projet, rendez-vous [ici](http://zombiela
   <figcaption>Page d'accueil</figcaption>
 </figure>
 
+
 <figure style="text-align: center;">
   <img src="public/image/readme/Activite.PNG" alt="Exemple d'une description d'une activité" >
   <figcaption>Description d'une activité</figcaption>
 </figure>
+
 
 <figure style="text-align: center;">
   <img src="public/image/readme/Inscription.PNG" alt="Formulaire d'inscription" >
